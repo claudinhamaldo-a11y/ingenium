@@ -240,6 +240,32 @@ footer{background:var(--tx);padding:48px 5% 32px}
 }
 @media(max-width:600px){.pg{grid-template-columns:1fr}.ft2{grid-template-columns:1fr}.hst{gap:24px}}
 .prh{padding:16px 20px 12px}.prb{padding:12px 20px}.prf{padding:0 20px 14px}.prn{font-size:1.05rem}.prd{font-size:.82rem;margin-bottom:10px}.prl li{font-size:.8rem;padding:3px 0 3px 14px}.prl{margin-bottom:10px}.prg{gap:16px}
+
+.cons{background:var(--cr);padding:96px 5%}
+.cons .ci{max-width:1160px;margin:0 auto}
+.cons .cl{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--az);margin-bottom:14px}
+.cons h2{font-family:"DM Serif Display",serif;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.15;margin-bottom:18px}
+.cons h2 em{color:var(--az)}
+.cons .cin{color:var(--ts);max-width:680px;margin-bottom:48px;font-weight:300;font-size:1.02rem}
+.cons .cg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:56px}
+.cons .cc{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:26px 22px}
+.cons .cc b{display:block;font-family:"DM Serif Display",serif;font-style:italic;color:rgba(74,144,217,.45);font-size:2rem;line-height:1;margin-bottom:10px}
+.cons .cc h3{font-size:1rem;margin-bottom:8px;line-height:1.3}
+.cons .cc p{font-size:.88rem;color:var(--ts)}
+.cons .ia{background:var(--tx);color:#fff;border-radius:14px;padding:38px 36px;margin-bottom:28px}
+.cons .ia h3{font-family:"DM Serif Display",serif;font-size:1.6rem;margin-bottom:10px}
+.cons .ia p.s{color:rgba(255,255,255,.65);font-weight:300;max-width:640px;margin-bottom:22px}
+.cons .ia ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px}
+.cons .ia li{font-size:.92rem;padding-left:22px;position:relative;color:rgba(255,255,255,.88)}
+.cons .ia li::before{content:"→";position:absolute;left:0;color:var(--azm)}
+.cons .dx{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:#fff;border:1px solid var(--az);border-radius:14px;padding:28px 32px}
+.cons .dx h3{font-size:1.15rem;margin-bottom:4px}
+.cons .dx p{color:var(--ts);font-size:.92rem;max-width:560px}
+.cons .btn{display:inline-block;background:var(--az);color:#fff;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:8px;font-size:.95rem}
+.cons .btn:hover{background:var(--azo)}
+.cons .nota{margin-top:26px;font-size:.84rem;color:var(--ts)}
+@media(max-width:900px){.cons .cg{grid-template-columns:repeat(2,1fr)}.cons .ia ul{grid-template-columns:1fr}}
+@media(max-width:560px){.cons{padding:64px 5%}.cons .cg{grid-template-columns:1fr}.cons .ia,.cons .dx{padding:26px 22px}}
 </style>
 </head>
 <body>
@@ -329,6 +355,38 @@ footer{background:var(--tx);padding:48px 5% 32px}
       <p>Mentoría 1-a-1 · Presencial o virtual · Asunción y Gran Asunción</p>
       <a href="https://wa.me/595992209690?text=Hola%20Claudia%2C%20quiero%20saber%20más%20sobre%20la%20Mentoría%204x4" target="_blank" class="bp">Consultá disponibilidad →</a>
     </div>
+  </div>
+</section>
+
+<section class="cons" id="consultoria">
+  <div class="ci">
+    <p class="cl">Consultoría para emprendedores y mipymes</p>
+    <h2>Un negocio ordenado, con <em>gente idónea</em> y tecnología que te ahorra tiempo</h2>
+    <p class="cin">Acompaño a dueños de pequeños negocios a poner en orden lo comercial, lo administrativo y lo financiero, con las personas adecuadas en cada puesto y la tecnología como aliada para mejorar procesos y ganar tiempo. Empezamos por el punto que más te duele hoy.</p>
+    <div class="cg">
+      <div class="cc"><b>01</b><h3>Gestión Administrativa y Financiera</h3><p>Costos, precios, márgenes, caja y orden del día a día. Planes de financiamiento y proyectos.</p></div>
+      <div class="cc"><b>02</b><h3>Estrategia Comercial y Ventas</h3><p>Cómo se atiende, se cotiza y se da seguimiento a cada cliente, también por WhatsApp.</p></div>
+      <div class="cc"><b>03</b><h3>Recursos Humanos y Liderazgo</h3><p>La persona idónea en cada puesto, roles claros, capacitación y tareas delegadas.</p></div>
+      <div class="cc"><b>04</b><h3>Enfoque Tecnológico</h3><p>Procesos más simples y rápidos con herramientas digitales e inteligencia artificial.</p></div>
+    </div>
+    <div class="ia">
+      <h3>Aprendé a usar IA en tu negocio, trabajando con tus propios datos</h3>
+      <p class="s">Nada de talleres ni teoría. Trabajamos 1 a 1, en tu escritorio u oficina, con tus datos reales y sobre los procesos de todos los días que hoy te frenan. Aprendés a usar la IA y, sobre todo, a detectar por vos mismo dónde se traba tu negocio.</p>
+      <ul>
+        <li>Respondés clientes y cotizás más rápido, sin empezar de cero cada vez</li>
+        <li>Ordenás ventas, gastos y cobros, y los leés con claridad</li>
+        <li>Documentás cómo se hace cada tarea para poder delegarla</li>
+        <li>Identificás qué proceso te hace perder más tiempo y cómo mejorarlo</li>
+      </ul>
+    </div>
+    <div class="dx">
+      <div>
+        <h3>Autodiagnóstico gratuito de tu negocio</h3>
+        <p>Respondé unas preguntas simples desde el celular y conocé en qué pilar tu negocio está fuerte y en cuál necesita atención. Si querés, lo revisamos juntos en una charla gratuita de 20 minutos.</p>
+      </div>
+      <a class="btn" href="https://wa.me/595992209690?text=Hola%20Claudia%2C%20quiero%20hacer%20el%20autodiagn%C3%B3stico%20gratuito%20de%20mi%20negocio" target="_blank" rel="noopener">Quiero mi autodiagnóstico →</a>
+    </div>
+    <p class="nota">Consultoría 1-a-1 · Presencial o virtual · Paraguay. Primero conversamos y definimos juntos si puedo ayudarte; no trabajo sin un diagnóstico previo.</p>
   </div>
 </section>
 

@@ -67,7 +67,7 @@ footer{text-align:center;color:var(--ts);font-size:.85rem;padding:20px}
 <div class="card">
 <p id="foco" style="margin-top:0"></p>
 <p>Si querés, lo vemos juntas en una charla gratuita de 20 minutos, con tu negocio real adelante. Sin compromiso.</p>
-<a class="btn wa" id="wa" href="#">Quiero mi diagnóstico gratuito por WhatsApp</a>
+<a class="btn wa" id="wa" href="#">Quiero mi diagnóstico gratuito por correo</a>
 </div>
 <p><button type="button" id="again" style="background:#fff;color:var(--azm);border:1.5px solid var(--azm)">Volver a hacerlo</button></p>
 </section>
@@ -108,8 +108,8 @@ txt.push(p.k+': '+l);
 rows+='<div class="row"><div class="dot '+c+'"></div><div><h3>'+p.k+' · '+l+'</h3><p>'+(s>=4?p.v:p.r)+'</p></div></div>'});
 document.getElementById('rows').innerHTML=rows;
 document.getElementById('foco').innerHTML=min>=4?'<strong>¡Muy bien!</strong> Tu negocio está sólido en las 4 áreas. Hablemos de cómo escalarlo.':'<strong>Por dónde empezar:</strong> '+worst+'.';
-var m='Hola Claudia, hice el autodiagnóstico de Ingenium. Mi semáforo: '+txt.join('; ')+'. Quiero mi diagnóstico gratuito.';
-document.getElementById('wa').href='https://wa.me/595992209690?text='+encodeURIComponent(m);
+var m='Hola, hice el autodiagnóstico de Ingenium. Mi semáforo: '+txt.join('; ')+'. Quiero mi diagnóstico gratuito.';
+document.getElementById('wa').href='mailto:ingenium.nt@gmail.com?subject='+encodeURIComponent('Quiero mi diagnóstico gratuito')+'&body='+encodeURIComponent(m);
 document.getElementById('res').style.display='block';f.style.display='none';
 document.getElementById('res').scrollIntoView({behavior:'smooth'})});
 document.getElementById('again').addEventListener('click',function(){f.reset();f.style.display='block';

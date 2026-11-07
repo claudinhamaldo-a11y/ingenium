@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (Analytics) -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NFBPHD9S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autodiagnóstico gratuito para tu negocio | Ingenium</title>
+<meta name="description" content="8 preguntas, 2 minutos y un semáforo que te muestra en qué parte de tu negocio (administración, ventas, equipo o tecnología) tenés que actuar primero. Gratis.">
+<link rel="canonical" href="https://ingeniumpy.com/diagnostico/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Cómo está tu negocio? Autodiagnóstico gratuito en 2 minutos">
+<meta property="og:description" content="8 preguntas y un semáforo para saber qué área de tu negocio atender primero.">
+<meta property="og:url" content="https://ingeniumpy.com/diagnostico/">
+<meta property="og:locale" content="es_PY">
+<style>
+:root{--az:#12284C;--azm:#1F4E8C;--cr:#F7F4EC;--tx:#1d2433;--ts:#5b6475;--bd:#dfe3ea;--vd:#2e9e5b;--am:#e8a317;--rj:#d64545}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cr);color:var(--tx);line-height:1.55}
+header{background:var(--az);color:#fff;padding:18px 20px}
+header a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.5px}
+main{max-width:720px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:1.7rem;line-height:1.25;color:var(--az);margin:.2em 0 .4em}
+.lead{color:var(--ts);margin-bottom:22px}
+.card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:18px;margin:14px 0}
+.pil{font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--azm);font-weight:700}
+.q{font-weight:600;margin:6px 0 12px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opts label{flex:1 1 140px;border:1.5px solid var(--bd);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:.95rem;background:#fff}
+.opts input{margin-right:6px}
+.opts label:has(input:checked){border-color:var(--azm);background:#eaf1fb}
+button,.btn{display:inline-block;background:var(--azm);color:#fff;border:0;border-radius:10px;padding:13px 22px;font-size:1rem;font-weight:700;cursor:pointer;text-decoration:none}
+button:disabled{background:#9aa6b8;cursor:not-allowed}
+.btn.wa{background:#1f9d55}
+#res{display:none}
+.row{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--bd)}
+.row:last-child{border-bottom:0}
+.dot{width:22px;height:22px;border-radius:50%;flex:0 0 22px;margin-top:3px}
+.verde{background:var(--vd)}.amarillo{background:var(--am)}.rojo{background:var(--rj)}
+.row h3{margin:0 0 2px;font-size:1.05rem}
+.row p{margin:0;color:var(--ts);font-size:.95rem}
+.prog{font-size:.9rem;color:var(--ts);margin:10px 0}
+.nota{font-size:.82rem;color:var(--ts);margin-top:26px}
+footer{text-align:center;color:var(--ts);font-size:.85rem;padding:20px}
+</style>
+</head>
+<body>
+<header><a href="https://ingeniumpy.com/">INGENIUM</a></header>
+<main>
+<h1>¿Cómo está tu negocio hoy? Descubrilo en 2 minutos</h1>
+<p class="lead">8 preguntas simples. Al final te muestro un semáforo con las 4 áreas que sostienen a cualquier emprendimiento y por dónde conviene empezar. Es gratis y no te pido ningún dato.</p>
+
+<form id="f">
+<div id="qs"></div>
+<p class="prog" id="prog">Respondidas: 0 de 8</p>
+<button type="submit" id="go" disabled>Ver mi semáforo</button>
+</form>
+
+<section id="res">
+<h2>Tu semáforo</h2>
+<div class="card" id="rows"></div>
+<div class="card">
+<p id="foco" style="margin-top:0"></p>
+<p>Si querés, lo vemos juntas en una charla gratuita de 20 minutos, con tu negocio real adelante. Sin compromiso.</p>
+<a class="btn wa" id="wa" href="#">Quiero mi diagnóstico gratuito por WhatsApp</a>
+</div>
+<p><button type="button" id="again" style="background:#fff;color:var(--azm);border:1.5px solid var(--azm)">Volver a hacerlo</button></p>
+</section>
+
+<p class="nota">Este autodiagnóstico es orientativo y no reemplaza un análisis de tu caso. Tus respuestas se calculan en tu propio dispositivo y no se guardan ni se envían a ningún lado.</p>
+</main>
+<footer>Ingenium · Consultoría 1 a 1 para emprendedores y mipymes · Paraguay</footer>
+
+<script>
+var P=[
+{k:"Gestión administrativa y financiera",q:["¿Sabés cuánto ganás realmente por cada producto o servicio, después de todos los costos?","¿Separás la plata del negocio de la tuya personal y registrás lo que entra y sale cada semana?"],
+ r:"Es la base: sin números claros se decide a ciegas. Un buen primer paso es calcular tus costos y márgenes reales.",
+ v:"Tus números están ordenados. Podés pasar a proyectar y planificar crecimiento."},
+{k:"Estrategia comercial y ventas",q:["¿Tenés claro quién es tu cliente ideal y por qué te compra a vos y no a otro?","¿Les hacés seguimiento a quienes te consultan hasta que compran o dicen que no?"],
+ r:"Hay ventas que se te están escapando. Ordenar tu oferta y tu seguimiento por WhatsApp suele dar resultados rápidos.",
+ v:"Tu proceso comercial funciona. El desafío ahora es hacerlo repetible y medible."},
+{k:"Recursos humanos y liderazgo",q:["¿Cada persona del negocio (vos incluida/o) sabe qué tiene que hacer y cómo se mide si lo hizo bien?","¿Podés ausentarte unos días sin que el negocio se frene?"],
+ r:"El negocio depende demasiado de vos. Definir roles, tareas y rutinas libera tu tiempo.",
+ v:"Tu organización sostiene el negocio. Podés enfocarte en crecer."},
+{k:"Enfoque tecnológico",q:["¿Tus ventas, clientes y cuentas están en una hoja o sistema ordenado (no en cuadernos, chats o de memoria)?","¿Usás alguna herramienta o IA para ahorrar tiempo en tareas repetitivas?"],
+ r:"Hay tiempo que podrías recuperar. Con tus propios datos, la IA y una buena planilla resuelven cuellos de botella cotidianos.",
+ v:"Ya aprovechás la tecnología. Se puede automatizar aún más lo repetitivo."}];
+var O=[["Sí",2],["A veces",1],["No",0]];
+var qs=document.getElementById('qs'),n=0;
+P.forEach(function(p,i){p.q.forEach(function(t,j){var id=i*2+j,c=document.createElement('div');c.className='card';
+var h='<div class="pil">'+p.k+'</div><div class="q">'+(id+1)+'. '+t+'</div><div class="opts">';
+O.forEach(function(o){h+='<label><input type="radio" name="q'+id+'" value="'+o[1]+'"> '+o[0]+'</label>'});
+c.innerHTML=h+'</div>';qs.appendChild(c)})});
+var f=document.getElementById('f');
+f.addEventListener('change',function(){n=f.querySelectorAll('input:checked').length;
+document.getElementById('prog').textContent='Respondidas: '+n+' de 8';document.getElementById('go').disabled=n<8});
+f.addEventListener('submit',function(e){e.preventDefault();
+var rows='',min=9,worst='',txt=[];
+P.forEach(function(p,i){var s=+f['q'+(i*2)].value+ +f['q'+(i*2+1)].value;
+var c=s>=4?'verde':(s>=2?'amarillo':'rojo'),l=s>=4?'Verde':(s>=2?'Amarillo':'Rojo');
+if(s<min){min=s;worst=p.k}
+txt.push(p.k+': '+l);
+rows+='<div class="row"><div class="dot '+c+'"></div><div><h3>'+p.k+' · '+l+'</h3><p>'+(s>=4?p.v:p.r)+'</p></div></div>'});
+document.getElementById('rows').innerHTML=rows;
+document.getElementById('foco').innerHTML=min>=4?'<strong>¡Muy bien!</strong> Tu negocio está sólido en las 4 áreas. Hablemos de cómo escalarlo.':'<strong>Por dónde empezar:</strong> '+worst+'.';
+var m='Hola Claudia, hice el autodiagnóstico de Ingenium. Mi semáforo: '+txt.join('; ')+'. Quiero mi diagnóstico gratuito.';
+document.getElementById('wa').href='https://wa.me/595992209690?text='+encodeURIComponent(m);
+document.getElementById('res').style.display='block';f.style.display='none';
+document.getElementById('res').scrollIntoView({behavior:'smooth'})});
+document.getElementById('again').addEventListener('click',function(){f.reset();f.style.display='block';
+document.getElementById('res').style.display='none';document.getElementById('go').disabled=true;
+document.getElementById('prog').textContent='Respondidas: 0 de 8';window.scrollTo(0,0)});
+</script>
+</body>
+</html>
